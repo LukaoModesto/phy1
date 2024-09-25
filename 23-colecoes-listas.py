@@ -52,7 +52,7 @@ print(pessoas.index('Cleusa')) # retorna em qual indice o registro está (Sendo 
 print(pessoas.count('Cleusa')) # conta quantos registro tem passo como argumento
 
 
-
+#aaaaaa
 
 
 
