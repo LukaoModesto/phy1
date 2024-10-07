@@ -100,21 +100,21 @@
 # string = "Hello, World!"
 # vogais = "aeiouAEIOU"
 
-string = "Hello, World!"
-vogais = "aeiouAEIOU"
+# string = "Hello, World!"
+# vogais = "aeiouAEIOU"
 
 
-contador = 0
-i = 0
+# contador = 0
+# i = 0
 
 
-while i < len(string):
-    if string[i] in vogais:
-        contador += 1
-    i += 1
+# while i < len(string):
+#     if string[i] in vogais:
+#         contador += 1
+#     i += 1
 
-# Imprimir o resultado
-print(f"O número de vogais na string é: {contador}")
+# # Imprimir o resultado
+# print(f"O número de vogais na string é: {contador}")
 
 
 
@@ -125,3 +125,16 @@ print(f"O número de vogais na string é: {contador}")
 # Inicializa a lista de compras vazia 
 # Loop para adicionar itens
 # Exibe a lista de compras com o loop FOR
+
+lista_compras = []
+
+while True:
+    item = input('Digite um item da lista de compras (ou "sair" pra finalizar)')
+    if item.upper() == 'SAIR':
+        break
+    lista_compras.append(item)
+
+    print(lista_compras)
+
+for i, item in enumerate(lista_compras, start=1):
+    print(f'{i}: {item}')
