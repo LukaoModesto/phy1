@@ -1,48 +1,77 @@
-frutas = {"Maça", "laranja", "Abacaxi", "Maça"}
+# # set = conjunto
+# # set funciona como uma lista desornada 
+# # Não aceita valores duplicados
+# # dados não podem ser alterados para outra dado
+# # podemos incluir e excluir dados
 
-frutas.add("Uva") #adicionamos a UVA
+# frutas = {'Maça','Laranja','Abacaxi','Maça'}
 
-frutas.pop()
+# print(frutas)
+# print(type(frutas))
 
-outras_frutas = ('banana', 'pera')
-#frutas.remove("Maça") #removemos a Maça
-frutas.update(outras_frutas)
+# frutas.add("Uva")
+# frutas.remove('Maça')
+# frutas.pop()
 
-frutas = {"Maça", "Laranja", "Banana"}
-Frutas_citricas = ('Laranja', 'Limao', 'Tangerina')
 
-todas_frutas = frutas.union(Frutas_citricas)
+# print(frutas)
 
-frutas_comuns = frutas.intersection(Frutas_citricas)
-#print(frutas_comuns)
+# outras_frutas = {'banana','Pera'}
 
-#frozensets
-#Usando frozensets em sets
-#Os frozensets pode ser usado dentro de sets, pois sao imutaveis, o significa que nao podem ser alteradis apos a criaçao;
-#Isso é importante para que o set principal mantenha a propriedade de elemento unico.
+# frutas.update(outras_frutas)
+
+# print(frutas)
+
+# frutas = {'Maça','Banana','Laranja','Tangerina'}
+# frutas_citricas = {'Laranja','Limão','Tangerina'}
+
+# todas_frutas = frutas.union(frutas_citricas)
+
+# print(todas_frutas)
+
+# frutas_comuns = frutas.intersection(frutas_citricas)
+
+# print(frutas_comuns)
+
+# Frozensets
+# Usando Frozensets em sets
+# Os frozensets pode ser usados dentro de sets, pois são imutáveis, o que significa que não podem se alterados apos a criação. Isso é importante para que o set principal mantenha a propriedade de elemento único.
 
 grupo_estudante = {
-    frozenset({"Joao","Maria"}),
+    frozenset({"João","Maria"}),
     frozenset({"Romeu","Julieta"})
 }
 
-#print(grupo_estudante)
+print(grupo_estudante)
+
 grupo_estudante.add(frozenset({"Tiago","Fernanda"}))
 
-#for grupo in grupo_estudante:
-    #print(f"Grupo: {grupo}")
+print(grupo_estudante)
 
 
-#Operadores de conjunto
-grupo_a = frozenset({"Diego", "Jhenny"})
-grupo_b = frozenset({"Maria"})
+for grupo in grupo_estudante:
+    print(f"Grupo: {grupo}")
 
-#Uniao
+
+
+# Operadores de conjunto
+
+grupo_a = frozenset({"Diego","Jhenny"})
+grupo_b = frozenset({"Maria",})
+
+
+# União
 
 uniao = grupo_a | grupo_b
-#print(uniao)
+print(uniao)
 
-#interseçao
+# Interseção 
 
 intersecao = grupo_a & grupo_b
 print(intersecao)
+
+
+# Diferença
+
+diferenca = grupo_b - grupo_a
+print(diferenca)

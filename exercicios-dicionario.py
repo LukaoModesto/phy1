@@ -15,8 +15,7 @@
 #     "curso": "Engenharia"
 # }
 
-# print(f'Dicionário do aluno: {aluno["nome"]}')
-
+# print(f'Dicionário do aluno: {aluno}')
 
 ##################################################
 
@@ -30,10 +29,8 @@
 #     "curso": "Engenharia"
 # }
 
-# aluno['nota'] = 10
-# print(aluno)
+# print(f'Nome do aluno: {aluno["nome"]}')
 
-# print(f'Dicionario do aluno apos a adicao: {aluno}')
 
 ##################################################
 
@@ -42,6 +39,19 @@
 # nota = 9.5
 # Saida: Dicionário do aluno após adição: [aluno]
 
+# aluno = {
+#     "nome": "João",
+#     "idade": 20,
+#     "curso": "Engenharia"
+# }
+# print(aluno)
+# aluno['nota'] = 9.5
+# print(aluno)
+
+
+# print(f'Dicionário do aluno após adição: {aluno}')
+
+
 
 ##################################################
 
@@ -49,6 +59,17 @@
 # Atualizando a idade do aluno (atualize idade para 21)
 # Saida: Dicionário do aluno após atualização: [aluno]
 
+# aluno = {
+#     "nome": "João",
+#     "idade": 20,
+#     "curso": "Engenharia"
+# }
+# print(aluno)
+# aluno["idade"] = 21
+
+# print(aluno)
+
+# print(f'Dicionário do aluno após atualização: {aluno}')
 
 ##################################################
 
@@ -56,6 +77,23 @@
 # Remova a nota do aluno usando .pop() para remover 
 # Exibindo o dicionário após a remoção
 # Saida: Dicionário do aluno após remoção da nota: [aluno]
+
+# aluno = {
+#     "nome": "João",
+#     "idade": 20,
+#     "curso": "Engenharia"
+# }
+# print(aluno)
+
+# aluno['nota'] = 9.5
+
+# print(aluno)
+
+# aluno.pop('nota')
+
+# print(aluno)
+
+# print(f'Dicionário do aluno após remoção da nota: {aluno}')
 
 
 ##################################################
@@ -65,6 +103,17 @@
 # usando a condicional if e else
 # Saida verdadeira: O aluno está matriculado em um curso.
 # Saida falsa: O aluno não está matriculado em um curso.
+
+# aluno = {
+#     "nome": "João",
+#     "idade": 20,
+#     "curso": "Engenharia"
+# }
+
+# if 'curso' in aluno:
+#     print(f'O aluno está matriculado em um curso.')
+# else:
+#     print(f'O aluno não está matriculado em um curso.')
 
 
 ##################################################
@@ -78,6 +127,19 @@
 # Acessando o nome do segundo aluno
 # Saida: Nome do segundo aluno: [alunos[?][?]]
 
+# alunos = {
+#     'aluno1':{
+#         "nome": "João",
+#         "idade": 20
+#     },
+#     'aluno2':{
+#         "nome": "Maria",
+#         "idade": 22
+#     }
+# }
+
+# print(f'Nome do segundo aluno: {alunos['aluno2']["nome"]}')
+
 
 
 ##################################################
@@ -87,6 +149,13 @@
 # Criar um dicionário a partir das listas usando dist() e o zip()
 # Saida: Dicionário criado a partir de listas: [dicionario_aluno]
 
+# chaves = ["nome", "idade", "curso"]
+# valores = ["Carlos", 23, "Matemática"]
+
+
+# dicionario_aluno = dict(zip(chaves,valores))
+
+# print(dicionario_aluno)
 
 ##################################################
 
@@ -94,3 +163,12 @@
 # Obtendo o tamanho do dicionário de alunos usando o len
 # Saida: O tamanho do dicionário do aluno é: [tamanho_aluno]
 
+# aluno = {
+#     "nome": "João",
+#     "idade": 20,
+#     "curso": "Engenharia"
+# }
+
+# tamanho_aluno = len(aluno)
+
+# print(f'O tamanho do dicionário do aluno é: {tamanho_aluno}')

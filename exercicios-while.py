@@ -1,8 +1,16 @@
 # Exercício 1: Contagem de 1 a 10
 # Imprima os números de 1 a 10.
 
-# for i in range(1, 11):
-#     print(i)
+## for c in range(1,10+1):
+
+
+# c = 1
+
+# while c <= 10:
+
+#     print(c)
+
+#     c += 1
 
 #########################################################################
 
@@ -10,59 +18,63 @@
 # Calcule a soma dos números de 1 a 100.
 
 
+# contador = 1
 # soma = 0
-# numero = 1
+# while contador <= 100:
 
-# while numero <= 100:
-#     soma += numero
-#     numero += 1
+#     soma += contador
 
-# print(f"A soma dos números de 1 a 100 é: {soma}")
+#     contador += 1
+
+# print(f'soma = {soma}')
+
 
 
 #########################################################################
 
 # Exercício 3: Tabuada do 5
 # Imprima a tabuada do 5.
-# Tabuada do 5 usando while
 
-# i = 1
-# while i <= 10:
-#     resultado = 5 * i
-#     print(f"5 x {i} = {resultado}")
-#     i += 1
-
+# contador = 0
+# while contador <= 10:
+#     tabuada = 5 * contador
+#     print(f'5 x {contador} = {tabuada}')
+#     contador += 1
+#     # contador = contador + 1
 
 #########################################################################
 
 # Exercício 4: Números Pares
 # Imprima todos os números pares de 1 a 20.
 
-# i = 1
-# while i <= 20:
-#     if i % 2 == 0:  # Verifica se o número é par
-#         print(i)
-#     i += 1
+# contador = 1
+# while contador <= 20:
+#     if contador % 2 == 0:
+#         print(contador)
+#     contador += 1
+
 
 #########################################################################
 
 # Exercício 5: Quadrados dos Números
 # Imprima os quadrados dos números de 1 a 10.
 
-# for i in range(1, 11):
-#     quadrado = i ** 2
-#     print(f"O quadrado de {i} é {quadrado}")
+# contador = 1
+# while contador <= 10:
+#     calculo = contador ** 2
+#     print(f'{contador}^2 = {calculo}')
+
+#     contador += 1
 
 #########################################################################
 
 # Exercício 6: Contagem Regressiva
 # Imprima uma contagem regressiva de 10 a 1.
 
-
-# i = 10
-# while i > 0:
-#     print(i)
-#     i -= 1
+# contador = 10
+# while contador > 0:
+#     print(contador)
+#     contador -= 1
 
 
 #########################################################################
@@ -71,14 +83,16 @@
 # Calcule e imprima o fatorial do número 5.
 
 # numero = 5
+# contador = 1
 # fatorial = 1
-# i = 1
 
-# while i <= numero:
-#     fatorial *= i
-#     i += 1
+# while contador <= numero:
 
-# print(f"O fatorial de {numero} é {fatorial}")
+#     fatorial *= contador
+   
+#     contador += 1
+  
+# print(f'Fatorial de {numero} = {fatorial}')
 
 
 #########################################################################
@@ -86,12 +100,11 @@
 # Exercício 8: Números Ímpares
 # Imprima todos os números ímpares de 1 a 20.
 
-# i = 1
-# while i <= 20:
-#     if i % 2 != 0:  # Verifica se o número é ímpar
-#         print(i)
-#     i += 1
-
+# contador = 1
+# while contador <= 20:
+#     if contador % 2 != 0:
+#         print(contador)
+#     contador += 1
 
 #########################################################################
 
@@ -102,20 +115,19 @@
 
 # string = "Hello, World!"
 # vogais = "aeiouAEIOU"
-
-
 # contador = 0
-# i = 0
+# indice = 0
 
+# # print(string[7])
+# # print(len(string))
 
-# while i < len(string):
-#     if string[i] in vogais:
+# while indice < len(string): 
+#     if string[indice] in vogais:
 #         contador += 1
-#     i += 1
+#     indice += 1
 
-# # Imprimir o resultado
-# print(f"O número de vogais na string é: {contador}")
-
+# print(f"Número de vogais: {contador}")       
+    
 
 
 #########################################################################
@@ -128,13 +140,19 @@
 
 lista_compras = []
 
+# print(type(lista_compras))
+
 while True:
-    item = input('Digite um item da lista de compras (ou "sair" pra finalizar)')
+    item = input('Digite um item para a lista de compras (ou "sair" para finalizar): ')
+
     if item.upper() == 'SAIR':
         break
+
     lista_compras.append(item)
 
     print(lista_compras)
-
+    
 for i, item in enumerate(lista_compras, start=1):
+
     print(f'{i}: {item}')
+

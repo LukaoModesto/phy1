@@ -1,6 +1,11 @@
 # Exercício 1: Criar e Exibir uma Tupla de cores "vermelho", "verde", "azul", "amarelo", "roxo"
 # Saida: Tupla de cores: [cores]
 
+# cores = ("vermelho", "verde", "azul", "amarelo", "roxo")
+
+# print(f'Tupla de cores: {cores}')
+
+
 #######################################
 
 # Exercício 2: Acessar e Exibir Elementos da Tupla (acesse o primero e o último elemento)
@@ -12,8 +17,8 @@
 # primeira_cor = cores[0]
 # ultima_cor = cores[-1]
 
-# print(f"primeira cor: {primeira cor}")
-# prit(f"ultima cor:{ultima_cor}")
+# print(f'Primeira cor: {primeira_cor}')
+# print(f'Última cor: {ultima_cor}')
 
 #####################################################
 
@@ -25,10 +30,11 @@
 
 # cores = ("vermelho", "verde", "azul", "amarelo", "roxo")
 
-# if "azul" in cores:
-#     print("A cor azul esta na tupla")
-# else :
-#     print("a cor azul nao esta tupla")
+# if 'azul' in cores:
+#     print("A cor 'azul' está na tupla.")
+# else:
+#     print("A cor 'azul' não está na tupla.")
+
 
 ##########################################
 
@@ -39,14 +45,21 @@
 # Saida 1 : O número 2 aparece, [contagem_dois] vezes na tupla.
 # Saida 2: O índice do primeiro número 3 é: [indice_tres]
 
-# numeros = (1, 2, 3, 4, 5, 2, 3)
+# numeros = (1, 2,  4, 5, 3, 2, 3, 2)
 
 # contagem_dois = numeros.count(2)
 
-# # print(f"O numero dois aparece {contagem_dois} vezes na tupla")
+# print(f'O número 2 aparece, {contagem_dois} vezes na tupla.')
+
+
 # indice_tres = numeros.index(3)
-# print(f'o indice do primeiro numero 3 e: {indice_tres}')
-# ##################################
+
+# print(f'O índice do primeiro número 3 é: {indice_tres}')
+
+
+
+
+##################################
 
 # Exercício 5: Concatenar Tuplas
 # tupla1 = (1, 2, 3)
@@ -54,22 +67,28 @@
 
 # saida "Tupla concatenada: [tupla_concatenada]
 
+
 # tupla1 = (1, 2, 3)
 # tupla2 = (4, 5, 6)
 
+
 # tupla_concatenada = tupla1 + tupla2
 
-# print(f"Tupla concatenada:{tupla_concatenada}")
-       
+# print(f'Tupla concatenada: {tupla_concatenada}')
+
+
+
 ##########################################
 # Exercício 6: Repetir Elementos em uma Tupla
 # Criando uma tupla com um elemento repetido 
 # tupla = ("a")
 # Saida: Tupla repetida: [tupla_repetida]
 
+
 # tupla_repetida = ("a",) * 5
 
-# print(tupla_repetida)
+# print(f'Tupla repetida: {tupla_repetida}')
+
 # ###########################################
 
 # Exercício 7: Converter uma Lista em Tupla
@@ -79,10 +98,16 @@
 # saida: Tupla de frutas: [tupla_frutas]
 
 # lista_frutas = ["maçã", "banana", "laranja"]
-# #print(type(lista_frutas))
+
+# print(type(lista_frutas))
+
 # tupla_frutas = tuple(lista_frutas)
-# # print(type(tupla_frutas))
-# print(f"tupla frutas{tupla_frutas}")
+
+# print(type(tupla_frutas))
+
+# print(f'Tupla de frutas: {tupla_frutas}')
+
+
 ################################
 
 # Exercício 8: Desempacotar uma Tupla
@@ -91,8 +116,11 @@
 # Saida = Nome: [nome], Idade: [idade], Profissão: [profissao]
 
 # pessoa = ("João", 30, "Programador")
-# nome, idade, profissao  = pessoa
-# print(f'nome: {nome}, Idade: {idade}, profissao: {profissao}')
+
+# nome,idade,profissao  = pessoa
+
+# print(f'Nome: {nome}, Idade: {idade}, Profissão: {profissao}')
+
 
 #################################
 
@@ -102,10 +130,13 @@
 # Acessando e exibindo o valor associado à 'banana'
 # Saida: O valor da banana é [valor_banana] 
 
-# tupla_aninhada = (("maçã", 1), ("banana", 2), ("laranja", 3))
+# tupla_aninhada = (("maçã", 1, True), ("banana", 2, False), ("laranja", 3, True))
 
-# valor_banana = tupla_aninhada[2][1]
+# valor_banana = tupla_aninhada[0][2]
+
+
 # print(valor_banana)
+
 ################################
 
 # Exercício 10: Tamanho da Tupla
@@ -113,6 +144,9 @@
 # letras = ('a', 'b', 'c', 'd', 'e')
 # saida = O tamanho da tupla é: [tamanho_tupla]
 
-# letras = ('a', 'b,' 'c', 'd', 'e')
+# letras = ('a', 'b', 'c', 'd', 'e')
+
 # tamanho_tupla = len(letras)
-# print(f'o tamanho da tupla é {tamanho_tupla}')
+
+# print(f'O tamanho da tupla é: {tamanho_tupla}')
+
